@@ -4,11 +4,11 @@ import stdio
 head = None
 
 class Node:
-    def __init__(self, cuisine, name, price, distance, address, nextNode = None):
+    def __init__(self, cuisine, name, price, rating, address, nextNode = None):
         self.cuisine = cuisine
         self.name = name
         self.price = price
-        self.distance = distance
+        self.rating = rating
         self.address = address
         self.nextNode = nextNode
 
@@ -43,5 +43,5 @@ if not results:
     print(f"\nNo {targetCuisine} spots found!")
 else:
     for node in results:
-        print(f"\n{node.name} - Price: {node.price}/5, Distance: {node.distance}/5, - {node.address}\n")
+        print(f"\n{node.name} - Price: {node.price}/5, Rating: {node.rating}/5, - {node.address}\n")
 
